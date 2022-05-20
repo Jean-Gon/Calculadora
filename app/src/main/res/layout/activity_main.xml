@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_expressao"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:gravity="end"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="start"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:gravity="end"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="start"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/botao_limpar"
+            style="@style/Operators_button"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/shape_numero_selecionado"
+            android:text="C" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/divisao"
+            style="@style/Operators_button"
+            android:layout_width="49dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_esqurda"
+            android:text="/" />
+
+        <android.widget.Button
+            android:id="@+id/multiplicacao"
+            style="@style/Operators_button"
+            android:layout_width="49dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:text="*" />
+
+        <android.widget.Button
+            android:id="@+id/subtracao"
+            style="@style/Operators_button"
+            android:layout_width="50dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:text="-" />
+
+        <android.widget.Button
+            android:id="@+id/adicao"
+            style="@style/Operators_button"
+            android:layout_width="50dp"
+            android:layout_height="65dp"
+            android:background="@drawable/bt_direita"
+            android:text="+" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/sete"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="7" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/oito"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="8" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/nove"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="9" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/quatro"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/cinco"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/seis"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/um"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="1" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/dois"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/tres"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="3" />
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/ponto"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="." />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:id="@+id/zero"
+            style="@style/Numbers_button"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/backspace"
+            style="@style/Numbers_button"
+            android:src="@drawable/backs"
+            android:text="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/botao_igual"
+            style="@style/Operators_button"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_numero_selecionado"
+            android:text="=" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

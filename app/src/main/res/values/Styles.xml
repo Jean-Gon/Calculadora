@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Container_button">
+
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+    <style name="Operators_button" parent="Container_button">
+        <item name="background">@color/orange</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Numbers_button" parent="Container_button">
+        <item name="background">@drawable/botao_numero_clicavel</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
